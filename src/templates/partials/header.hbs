@@ -1,0 +1,74 @@
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #ff9933;
+}
+
+header .nav-links {
+    list-style: none;
+}
+
+header .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+    color: #ff9933;
+}
+
+</style>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Temple Name</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:3000">Home</a></li>
+                <li><a href="http://127.0.0.1:3000/booking">Booking</a></li>
+                <li><a href="http://127.0.0.1:3000/about">About</a></li>
+                <li><a href="http://127.0.0.1:3000/donation">Donations</a></li>
+                <li><a href="http://127.0.0.1:3000/events">Events</a></li>
+                <li><a href="http://127.0.0.1:3000/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>

@@ -1,0 +1,11 @@
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #4CAF50; /* Green color */
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}

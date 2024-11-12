@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Name - Spiritual Sanctuary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Temple Name</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:3000">Home</a></li>
+                <li><a href="http://127.0.0.1:3000/booking">Booking</a></li>
+                <li><a href="http://127.0.0.1:3000/about">About</a></li>
+                <li><a href="http://127.0.0.1:3000/donation">Donations</a></li>
+                <li><a href="http://127.0.0.1:3000/events">Events</a></li>
+                <li><a href="http://127.0.0.1:3000/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" aria-label="Welcome to the Temple">
+        <div class="hero-content">
+            <h2>Welcome to the Temple</h2>
+            <p>Experience peace, spirituality, and community.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About the Temple</h2>
+                <p>The Temple is a place of spiritual retreat and community gathering. We offer daily prayers, host cultural festivals, and serve the community with a variety of services. Join us to experience a sense of peace and belonging.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-item">
+                    <h3>Daily Prayers</h3>
+                    <p>Join us every morning and evening for a serene prayer session.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Festivals</h3>
+                    <p>Celebrate various cultural and religious festivals with us throughout the year.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Community Service</h3>
+                    <p>We are dedicated to serving the community through various initiatives and programs.</p>
+                </div>
+                <div>
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.189797921961!2d75.05456757017812!3d20.985027683225383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd9321ca29daccd%3A0x8bc167137ff2fbf1!2sChinchdevi%20Mandir!5e0!3m2!1sen!2sin!4v1724129807538!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="events">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li class="events1"><strong>Event 1</strong> - Date: August 30, 2024</li>
+                    <li class="events1"><strong>Event 2</strong> - Date: September 15, 2024</li>
+                    <li class="events1"><strong>Event 3</strong> - Date: October 5, 2024</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like to know more about the Temple, feel free to reach out to us.</p>
+                <p>Email: <a href="mailto:info@temple.com">info@temple.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Temple Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

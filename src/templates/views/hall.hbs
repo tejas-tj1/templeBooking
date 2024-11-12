@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall Booking Form</title>
+    <link rel="stylesheet" href="/css/hall.css">
+</head>
+{{>header}}
+<body>
+    <div class="form-container">
+        <h1>Hall Booking Form</h1>
+        <form action="/booking/hallBooking" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="purpose">Purpose of Booking:</label>
+            <input type="text" id="purpose" name="purpose" required>
+
+            <label for="size">Size of Hall:</label>
+            <select id="size" name="size" required>
+                <option value="">Select Size</option>
+                <option value="small">Small (up to 50 people)</option>
+                <option value="medium">Medium (up to 100 people)</option>
+                <option value="large">Large (up to 200 people)</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
